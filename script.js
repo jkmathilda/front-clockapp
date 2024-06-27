@@ -10,18 +10,22 @@ function timer_mode() {
   content.innerHTML = "";
   document.querySelector("#content").innerHTML = `
     <div id="timer_input">
-    <div class="container">
-    <div class="label">Hours</div>
-    <input type="number" min="0" max="30" value="0" placeholder="Hour" />
+      <div class="container">
+        <div class="label">Hours</div>
+        <input type="number" min="0" max="30" value="0" placeholder="Hour" />
+      </div>
+      <div class="container">
+        <div class="label">Minutes</div>
+        <input type="number" min="0" max="59" value="0" placeholder="Minute" />
+      </div>
+      <div class="container">
+        <div class="label">Seconds</div>
+        <input type="number" min="0" max="59" value="0" placeholder="Second" />
+      </div>
     </div>
-    <div class="container">
-    <div class="label">Minutes</div>
-    <input type="number" min="0" max="59" value="0" placeholder="Minute" />
-    </div>
-    <div class="container">
-    <div class="label">Seconds</div>
-    <input type="number" min="0" max="59" value="0" placeholder="Second" />
-    </div>
+    <div id="start_pause">
+      <button id="timer_start">Start</button>
+      <button id="timer_pause">Pause</button>
     </div>
     `;
 }

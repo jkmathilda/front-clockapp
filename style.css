@@ -28,7 +28,9 @@ button:hover {
 
 #content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -43,9 +45,17 @@ input {
 
 #timer_input {
     display: flex;
+    margin: 15px;
 }
 
 .label {
     margin: 5px 15px;
     font-size: small;
+}
+
+#timer_pause, #timer_start {
+  margin: 10px;
+  width: 80px;
+  font-size: small;
+  border-radius: 40px;
 }

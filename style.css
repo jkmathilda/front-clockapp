@@ -3,14 +3,26 @@
 * {
   font-family: "Ubuntu", sans-serif;
 }
-
-html, body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom, aliceblue, rgb(152, 205, 255));
 }
-body {
-  background: linear-gradient(to bottom, aliceblue, rgb(152, 205, 255))
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    color: black;
+  }
+  50% {
+    transform: rotateY(360deg);
+    color: rgb(129, 196, 255);
+  }
+  100% {
+    transform: rotate(0deg);
+    color: black;
+  }
 }
 
 #buttons {
@@ -31,37 +43,38 @@ button {
   transition: background-color 0.3s;
 }
 button:hover {
-    background-color: rgb(138, 200, 255);
+  background-color: rgb(138, 200, 255);
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-    outline: none;
-    border: none;
-    box-shadow: 3px 3px 3px 3px rgb(159, 175, 190);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0px 10px;
-    width: 50px;
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 3px 3px rgb(159, 175, 190);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 10px;
+  width: 50px;
 }
 
 #timer_input {
-    display: flex;
-    margin: 15px;
+  display: flex;
+  margin: 15px;
 }
 
 .label {
-    margin: 5px 15px;
-    font-size: small;
+  margin: 5px 15px;
+  font-size: small;
 }
 
-#timer_pause, #timer_start {
+#timer_pause,
+#timer_start, #timer_resume {
   margin: 10px;
   width: 80px;
   font-size: small;
@@ -71,4 +84,10 @@ input {
 #timer {
   margin-top: 50px;
   font-size: xx-large;
+}
+
+.done {
+  font-weight: 500;
+  font-size: 50px;
+  animation: rotate 5s linear infinite;
 }

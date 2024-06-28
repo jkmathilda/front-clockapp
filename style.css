@@ -2,7 +2,15 @@
 
 * {
   font-family: "Ubuntu", sans-serif;
-  background-color: aliceblue;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to bottom, aliceblue, rgb(152, 205, 255))
 }
 
 #buttons {
@@ -58,4 +66,9 @@ input {
   width: 80px;
   font-size: small;
   border-radius: 40px;
+}
+
+#timer {
+  margin-top: 50px;
+  font-size: xx-large;
 }

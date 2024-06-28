@@ -24,10 +24,17 @@ function timer_mode() {
       </div>
     </div>
     <div id="start_pause">
-      <button id="timer_start">Start</button>
-      <button id="timer_pause">Pause</button>
+      <button id="timer_start" onclick="start_timer()">Start</button>
+      <button id="timer_pause" onclick="pause_timer()">Pause</button>
     </div>
+    <div id="timer">
     `;
+}
+
+function start_timer() {
+  document.querySelector("#timer").innerHTML = `
+    <div>Hi</div>
+  `;
 }
 
 function stopwatch_mode() {

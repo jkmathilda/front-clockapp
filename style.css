@@ -76,7 +76,7 @@ input {
 #timer_pause,
 #timer_start, #timer_resume {
   margin: 10px;
-  width: 80px;
+  width: 100px;
   font-size: small;
   border-radius: 40px;
 }

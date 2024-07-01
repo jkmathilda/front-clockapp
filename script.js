@@ -76,9 +76,6 @@ function start_timer() {
     rem_hr = hr;
     rem_min = min;
     rem_sec = sec;
-    console.log(rem_hr);
-    console.log(rem_min);
-    console.log(rem_sec);
 
     updateDisplay();
   }

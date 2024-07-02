@@ -136,6 +136,10 @@ function resume_timer() {
   timerInterval = setInterval(countdown, 1000);
 }
 
+///////////////////////////////////////////
+//            STOPWATCH MODE             //
+///////////////////////////////////////////
+
 function stopwatch_mode() {
   changeBackgroundColor("btn_stopwatch", "btn_timer");
   content.innerHTML = "";
